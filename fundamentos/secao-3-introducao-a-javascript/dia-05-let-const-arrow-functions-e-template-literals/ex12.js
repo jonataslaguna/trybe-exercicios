@@ -11,4 +11,10 @@ const substituaX = (nome) =>{
     return fraseModificada
 }
 
-console.log(substituaX('Jonatas'))
+const minhasSkills = (func) => {
+    const skills = ['HTML', 'JavaScript', 'Css']
+    let presentation = `${func} Minhas três habilidades são: ${skills}` 
+    return presentation
+}
+
+console.log(minhasSkills(substituaX('Jonatas')))
