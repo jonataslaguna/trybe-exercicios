@@ -1,6 +1,7 @@
-const name = 'Adriana';
+const names = 'Adriana';
 const lastName = 'Soares';
-console.log('Olá' + ',' + name + ' ' + lastName + '!');
+//console.log('Olá' + ',' + name + ' ' + lastName + '!');
+console.log(`Olá, ${names} ${lastName} !`)
 function soma(a,b) {
   let resultado = a + b;
   return resultado;
