@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <main id="parent-of-parent">
+  <section id="parent">
+    <section id="first-child"></section>
+    <section id="where-are-you">
+      <section id="first-child-of-child"></section>
+    </section>
+    Attention!
+    <section id="third-child"></section>
+    <section id="fourth-and-last-child"></section>
+  </section>
+</main>
+    <script>
+        const whereAreYou = document.querySelector('#where-are-you')
+        whereAreYou.parentNode.style.color = 'green'
+        const firstChildOfChild = document.querySelector('#first-child-of-child')
+        firstChildOfChild.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nulla facilis ducimus reprehenderit repellendus ullam deserunt, excepturi, in dolore cum aut! Libero, voluptas corrupti? Sapiente ratione perferendis quidem molestias quae.'
+       
+        
+    </script>
+</body>
+</html>
