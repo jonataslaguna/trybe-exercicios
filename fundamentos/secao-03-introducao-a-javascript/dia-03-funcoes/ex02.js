@@ -10,4 +10,5 @@ function adiciona(nome) {
 }
 
 console.log(adiciona('João'))
+console.log(clientesTrybeBank)
 
