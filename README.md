@@ -1,9 +1,10 @@
-# Meu repositório de exercícios
+# My Exercise Repository - <a href="https://www.betrybe.com/">Trybe</a>
 
-1 - Fundamentos
+<h2>Course Modules</h2>
 
-2 - Front-end
-
-3 - Back-end
-
-4 - Ciência da Computação
+<ol>
+    <li>Fundamentals
+    <li>Front-end  
+    <li>Back-end
+    <li>Computer Science
+</ol>
