@@ -149,6 +149,4 @@ const clients = [
     }
   };
 
-  console.log(findPeopleByState('SP')); // Fluxo completo
-
-  console.log(findPeopleByState(0)); // Fluxo de exceção
+ 
