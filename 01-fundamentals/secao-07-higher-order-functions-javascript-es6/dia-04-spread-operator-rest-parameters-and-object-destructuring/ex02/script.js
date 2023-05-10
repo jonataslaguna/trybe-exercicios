@@ -9,7 +9,6 @@ const user = {
     squad: 'Rocket Landing Logic',
     squadInitials: 'RLL',
   };
-
   const trappistEnterprise = {...user, ... jobInfos}
 
   const {name, age, nationality, profession, squad, squadInitials} = trappistEnterprise
