@@ -16,4 +16,4 @@ myPromise().then((response) => {
     console.log(response)
 }).catch((error) => {
     console.log(`Promisse reject: ${error}`)
-})
+}).finally(() => console.log('Fim da execução'))
