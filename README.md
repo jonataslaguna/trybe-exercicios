@@ -3,7 +3,7 @@
 <h2>Course Modules</h2>
 
 <ol>
-    <li>Fundamentals
+    <li>Fundamentals ✔️
     <li>Front-end  
     <li>Back-end
     <li>Computer Science
