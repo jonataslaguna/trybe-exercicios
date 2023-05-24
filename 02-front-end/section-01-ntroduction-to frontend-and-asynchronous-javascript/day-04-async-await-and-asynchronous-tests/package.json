@@ -1,0 +1,18 @@
+{
+  "name": "day-04-async-await-and-asynchronous-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.7.5",
+    "vite": "^4.3.8"
+  }
+}
