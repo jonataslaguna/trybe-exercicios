@@ -99,3 +99,13 @@ li:hover {
 li:hover span {
     color: #95EBA8;
 }
+
+.swal2-modal {
+    border-radius: 4px;
+    background-color: #2f2f32;
+    color: #EAEAEA;
+}
+
+.swal2-container {
+    backdrop-filter: blur(8px);
+}
