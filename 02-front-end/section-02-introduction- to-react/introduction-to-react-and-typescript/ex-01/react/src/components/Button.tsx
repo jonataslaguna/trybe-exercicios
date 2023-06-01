@@ -1,7 +1,7 @@
 function Button() {
-  function handleClick() {
+  const handleClick = () => {
     alert('Meu primeiro event handler com React');
-  }
+  };
   return (
     <button onClick={ handleClick }>
       Clique em mim!
