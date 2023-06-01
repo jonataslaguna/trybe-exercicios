@@ -4,13 +4,13 @@ function Header() {
   return (
     <header>
       <h1>Hello world!!</h1>
-      <p>
+      <h2>
         Olá,
         {' '}
         {' '}
         <User />
+      </h2>
 
-      </p>
     </header>
   );
 }
