@@ -6,6 +6,10 @@ form {
     margin: auto;
 }
 
-form input {
+form input, select, textarea{
     margin-bottom: 15px;
+}
+
+p {
+    text-align: center;
 }
