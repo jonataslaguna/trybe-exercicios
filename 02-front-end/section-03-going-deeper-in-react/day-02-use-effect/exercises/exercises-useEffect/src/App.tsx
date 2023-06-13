@@ -9,15 +9,21 @@ type Coordinates = {
 }
 
 function App() {
-  const [coordinates, setCoordinates] = useState<Coordinates | null>(null);
+  const [loading, setLoading] = useState(true); 
+  const [coordinates, setCoordinates] = useState<Coordinates | null>(null);+
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchCoordinates();
       setCoordinates({latitude: data.latitude, longitude: data.longitude})
+      setLoading(false); 
     }
     fetchData();
   },[])
+
+   if (loading) {
+    return <h1>Loading...</h1>
+  } 
 
   return (
     <>
