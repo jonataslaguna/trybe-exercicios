@@ -4,7 +4,7 @@
 
 <ol>
     <li>Fundamentals ✔️
-    <li>Front-end  
+    <li>Front-end  ⌛
     <li>Back-end
     <li>Computer Science
 </ol>
