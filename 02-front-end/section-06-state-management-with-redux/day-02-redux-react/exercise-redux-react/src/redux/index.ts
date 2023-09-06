@@ -1,10 +1,10 @@
 import { composeWithDevTools } from '@redux-devtools/extension';
 import { legacy_createStore as createStore} from 'redux';
-import counterReducer from './reducers/counterReducer';
+import rootReducer from './reducers';
 
 
-const store = createStore(counterReducer, composeWithDevTools());
-
+const store = createStore(rootReducer, composeWithDevTools());
+//Store: É onde o estado global da aplicação é armazenado e é representado por um objeto JavaScript.
 
 export default store;
 

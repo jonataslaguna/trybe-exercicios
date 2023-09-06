@@ -37,7 +37,6 @@ class RandomNumber extends React.Component<RandomNumberProps,  RandomNumberState
     handleClick = () => {
         const number = this.generateRandomNumber();
         this.setState({
-                ...this.state,
                 randomNumber: number
             });
     }
