@@ -13,7 +13,7 @@
             <li> Introduction to JavaScript ES6 and Unit Testing
             <li> Array Methods
         </ul>
-    <li> Front-end ⌛
+    <li> Front-end ✔️
         <ul>
             <li> Introduction to Frontend, and Asynchronous JavaScript
             <li> Introduction to React
@@ -23,6 +23,6 @@
             <li> State Management with Redux
             <li> Class Components, Context API, and Custom Hooks
         </ul>
-    <li> Back-end
+    <li> Back-end ⌛
     <li> Computer Science
 </ol>
