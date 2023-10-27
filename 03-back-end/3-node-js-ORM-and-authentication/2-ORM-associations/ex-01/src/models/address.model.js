@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   
     Address.associate = (models) => {
   // define o tipo de relacionamento
-      Address.belongsTo(models.Employee,
+      Address.belongsTo(models.Employee, // O ENDEREÇO PERTENCE A UM (belongsTo) FUNCIONÁRIO
       // define qual a foreign key a ser criada
         { foreignKey: 'employeeId', as: 'employees' });
     };

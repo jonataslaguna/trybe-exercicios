@@ -1,3 +1,5 @@
+// src/migrations/[timestamp]-create-addresses.js
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.createTable('addresses', {
@@ -29,8 +31,9 @@ module.exports = {
         // Informa que o campo é uma Foreign Key (Chave estrangeira)
         references: {
           // Informa a tabela da referência da associação
-          model: 'employees', // NOME DA TABELA TABELA NÃO DA MODEL
-          key: 'id', // Informa a coluna da referência que é a chave correspondente
+          model: 'employees', // NOME DA TABELA NÃO DA MODEL
+          // Informa a coluna da referência que é a chave correspondente
+          key: 'id',
         },
       },
     });
