@@ -1,4 +1,5 @@
 const { Address, Employee } = require('../models/');
+const db = require('../models');
 
 const getAll = async () => {
   const users = await Employee.findAll({
@@ -15,4 +16,22 @@ const getById = async (id) => {
   return employee;
 }
 
-module.exports = { getAll, getById };
+const insert = async ({ firstName, lastName, age, city, street, number }) => {
+  const result = await db.sequelize.transaction(async (t) => {
+    const employee = await Employee.create({
+      firstName, lastName, age,
+    }, { transaction: t });
+
+    await Address.create({
+      city, street, number, employeeId: employee.id
+    }, { transaction: t });
+    return employee;
+  });
+
+  return result;
+  // Se chegou até aqui é porque as operações foram concluídas com sucesso,
+  // não sendo necessário finalizar a transação manualmente.
+  // `result` terá o resultado da transação, no caso um empregado e o endereço cadastrado
+};
+
+module.exports = { getAll, getById, insert };
