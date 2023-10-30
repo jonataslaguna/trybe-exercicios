@@ -13,7 +13,10 @@ module.exports = (sequelize, _DataTypes) => {
         models.Book.belongsToMany(models.User, {
           as: 'users',
           through: UserBook,
-          foreignKey: 'bookId', // se refere ao id de Book na tabela de `users_books`
+          foreignKey: 'bookId', // se refere ao id de Book na tabela de `users_books` 
+          
+        /* Lembre-se: foreignKey sempre se refere ao model em que chamamos belongsToMany, enquanto otherKey se refere ao model com o qual estamos criando a associação. */
+
           otherKey: 'userId', // se refere a outra chave de `users_books`
         });
         models.User.belongsToMany(models.Book, {
