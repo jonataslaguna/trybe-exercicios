@@ -78,7 +78,7 @@ class Order {
     }
 
     totalWhithDiscount():number {
-        return this.totalOrder() - this._discount;
+        return this.totalOrder()  * (1 - this.discount);
     }
 };
 
