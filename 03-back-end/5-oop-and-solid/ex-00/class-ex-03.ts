@@ -66,7 +66,7 @@ class Studdent {
 }
 
 
-class Person {
+export default class Person {
     private _name: string = '';
     private _birthDate: Date;
 
