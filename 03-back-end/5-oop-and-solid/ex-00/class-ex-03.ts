@@ -65,8 +65,58 @@ class Studdent {
     }
 }
 
-const studdent1 = new Studdent('149237', 'Jonatas', [8,10,9,10], [8,10]);
 
-console.log(studdent1)
+class Person {
+    private _name: string = '';
+    private _birthDate: Date;
 
-console.log(studdent1.averageNotes())
+    constructor(
+        name: string,
+        birthDate: Date
+    ) {
+        this._birthDate = birthDate;
+        this._name = name;
+        this.validatePerson();
+    }
+
+    get name(): string {
+        return this._name;
+    }
+
+    set name(value: string) {
+        this._name = value;
+    }
+
+    get birthDate(): Date {
+        return this._birthDate;
+    }
+
+    set birthDate(value: Date) {
+        this._birthDate = value;
+    }
+
+    static getAge(value: Date){
+        const diff = Math.abs(new Date().getTime() - value.getTime());
+        const yearMs = 31_536_000_000;
+        return Math.floor(diff / yearMs );
+    }
+
+    private validateName(value: string): void {
+        if(value.length < 3) throw new Error ('O nome precisa ter mais que 2 caracteres')
+    }
+
+    private validabirthDate(value: Date): void {
+        if(value.getTime() > new Date().getTime()) throw new Error ('A data não pode ser uma data no futuro');
+
+        if(Person.getAge(value) > 120) throw new Error ('Idade inválida');
+    }
+
+    private validatePerson(): void {
+        this.validateName(this.name);
+        this.validabirthDate(this.birthDate);
+     }
+}
+
+/* const person = new Person('Jonatas', new Date('1900/01/06')) */
+
+
