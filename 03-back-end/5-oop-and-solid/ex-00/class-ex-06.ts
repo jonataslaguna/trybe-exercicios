@@ -51,6 +51,8 @@ export default class Student extends Person {
 
 const carolina = new Student('Carolina da Silva', new Date('2005/03/17'));
 const lucas = new Student('Lucas Peixoto Salgueiro', new Date('2006/07/19'));
+const fabio = new Student('Fabio Andre Santos', new Date('2006/07/19'));
+
 
 carolina.examsGrades = [25, 20, 25, 23];
 lucas.examsGrades = [25, 20, 25, 23];
