@@ -8,5 +8,3 @@ def biggestNumber(num1, num2):
 
 
 print(biggestNumber(5, 10))
-
-
