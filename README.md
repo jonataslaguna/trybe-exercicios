@@ -1,6 +1,6 @@
 # My Exercise Repository - <a href="https://www.betrybe.com/">Trybe</a>
 
-<h2>Course Modules</h2>
+## Course Modules
 
 <ol>
     <li> Fundamentals ✔️
@@ -23,6 +23,17 @@
             <li> State Management with Redux
             <li> Class Components, Context API, and Custom Hooks
         </ul>
-    <li> Back-end ⌛
-    <li> Computer Science
+    <li> Back-end  ✔️
+        <ul>
+            <li> Docker: Utilizando Containers
+            <li> Introduction to SQL
+            <li> SQL Functions, JOINs and Normalization
+            <li> Introduction to web development with node.js 
+            <li> Software Architecture: Model, Service and Controller
+            <li> Node.js: ORM and Authentication
+            <li> Masterclass: Implementing Applications in the Cloud
+            <li> TypeScript
+            <li> Object Oriented Programming and SOLID
+        </ul>
+    <li> Computer Science ⌛
 </ol>
