@@ -25,7 +25,7 @@
         </ul>
     <li> Back-end  ✔️
         <ul>
-            <li> Docker: Utilizando Containers
+            <li> Docker: Using Containers
             <li> Introduction to SQL
             <li> SQL Functions, JOINs and Normalization
             <li> Introduction to web development with node.js 
