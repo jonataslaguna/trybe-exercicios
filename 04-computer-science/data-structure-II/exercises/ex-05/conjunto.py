@@ -23,7 +23,7 @@ class Conjunto:
 
     def __contains__(self, item):
         return self.set[item]
-    
+
     def union(self, conjunto_b):
         new_conjunto = Conjunto()
 
@@ -32,7 +32,7 @@ class Conjunto:
                 new_conjunto.add(index)
 
         return new_conjunto
-    
+
     def intersection(self, conjunto_b):
         new_conjunto = Conjunto()
 
@@ -61,5 +61,3 @@ if __name__ == "__main__":
 
     conj4 = Conjunto()
     print(conj4)
-    
-    
