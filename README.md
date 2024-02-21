@@ -35,5 +35,11 @@
             <li> TypeScript
             <li> Object Oriented Programming and SOLID
         </ul>
-    <li> Computer Science ⌛
+    <li> Computer Science ✔️
+        <ul>
+            <li> Introduction to Python
+            <li> Algorithms
+            <li> Data Structures I: Linear Lists
+            <li> Data Structures II: Hashmaps and Sets
+        </ul>
 </ol>
